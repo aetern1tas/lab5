@@ -31,10 +31,6 @@ for tag in all_tags:
 print("Найденные уникальные открывающие тэги:", unique_tags, "\nВсего найдено тэгов:", len(unique_tags))
 
 
-import re
-import csv
-
-
 with open("task3.txt", "r", encoding='utf-8') as text:
     file_content = text.read()
 
