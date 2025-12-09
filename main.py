@@ -51,10 +51,9 @@ with open('task3_table.txt', 'w', encoding='utf-8') as answer:
         date_val = search_date[i].strip()
         site_val = search_site[i].strip()
         
-        table = f"{id_val}; {surname_val}; {email_val}; {date_val}; {site_val}"
+        table = "; ".join([id_val, surname_val, email_val, date_val, site_val])
         answer.write(table)
         answer.write('\n')
-
 
 
 with open("task3_table.csv", 'w', encoding='utf-8', newline='') as csvfile:
